@@ -10,20 +10,15 @@
 	<section class="flex items-center">
 		<h1>Teflon</h1>
 		<button>Login</button>
-		<nav>
-			<button>
+		<nav class="flex flex-col">
+			<button class="w-5 h-5">
 				<img src={closeIcon} alt="Close nav menu icon" />
 			</button>
-			<link>
-        Home
-      </link>
-      <link>
-        Support
-      </link>
-      <link>
-        Company
-      </link>
+			<a href="/">Home</a>
+			<a href="/download">Download</a>
+			<a href="/support">Support</a>
+			<a href="/faq">Faq</a>
+			<a href="/company">Company</a>
 		</nav>
 	</section>
-	<slot />
 </div>
