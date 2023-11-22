@@ -1,21 +1,29 @@
 <script>
-    import "../app.css"
+	// import main css file
+	import '../app.css'
+
+	// import icons from assets folder
+	import closeIcon from '$lib/assets/close.png'
 </script>
-<body class="bg-background-color w-screen h-screen text-text-color">
-    <nav class="flex w-4/5 justify-between items-center mx-auto py-8 mb-10">
-        <h1 class="text-5xl flex items-center">Teflon</h1>
-        <div class="flex justify-between w-1/2">
-            <p>Download</p>
-            <p>Premium</p>
-            <p>Discover</p>
-            <p>Safety</p>
-            <p>Support</p>
-            <p>Blog</p>
-            <p>Careers</p>
-        </div>
-        <div>
-            <button>Login</button>
-        </div>
-    </nav>
-    <slot />
-</body>
+
+<div>
+	<section class="flex items-center">
+		<h1>Teflon</h1>
+		<button>Login</button>
+		<nav>
+			<button>
+				<img src={closeIcon} alt="Close nav menu icon" />
+			</button>
+			<link>
+        Home
+      </link>
+      <link>
+        Support
+      </link>
+      <link>
+        Company
+      </link>
+		</nav>
+	</section>
+	<slot />
+</div>
